@@ -19,7 +19,7 @@ export default function DisplayItem({ item, key }) {
                             <Paragraph delete italic type='secondary' style={{ margin: 0, fontFamily: 'Outfit, sans-serif' }}>{item.price.currency.concat(' ').concat(item.price.was)}</Paragraph>
                             <Flex align='start'>
                                 <Text type='secondary' style={{ paddingInlineEnd: 4, wordBreak: 'keep-all' }}>{item.price.currency}</Text>
-                                <Text ellipsis={{ rows: 1, expandable: false, symbol: '...' }} style={{ fontSize: '1.16rem', fontWeight: 'bold', lineHeight: 1, fontFamily: 'Outfit, sans-serif', wordBreak: 'keep-all' }}>{item.price.current}</Text>
+                                <Text ellipsis={{ rows: 1, expandable: false, symbol: '...' }} style={{ fontSize: '1.16rem', fontWeight: 'bold', lineHeight: 1, fontFamily: 'Outfit, sans-serif', wordBreak: 'keep-all', color: 'deeppink' }}>{item.price.current}</Text>
                             </Flex>
                         </Space>
                         <Divider style={{ marginBottom: 6, marginTop: 12 }} />

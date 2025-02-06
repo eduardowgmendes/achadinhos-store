@@ -153,8 +153,8 @@ p {
 
 .glow:hover {
   z-index: 99999;
-  box-shadow: 0 0 8rem 1rem rgba(255, 215, 230, .25);
-  background-color: rgba(255, 215, 230, 1);
+  box-shadow: 0 0 8rem 1rem rgba(255, 255, 255, .25);
+  background-color: white;
 }
 
 .glow:hover * {

@@ -27,7 +27,7 @@ export default function ListItem({ item, key }) {
                                 <Paragraph delete italic type='secondary' style={{ margin: 0, fontFamily: 'Outfit, sans-serif' }}>{item.price.currency.concat(' ').concat(item.price.was)}</Paragraph>
                                 <Space size='small' align="end">
                                     <small style={{ wordBreak: 'keep-all' }}>{item.price.currency}</small>
-                                    <Text ellipsis={{ rows: 1, expandable: false, symbol: '...' }} style={{ fontSize: '1.5em', fontWeight: 'bold', lineHeight: 1, fontFamily: 'Outfit' }}>{item.price.current}</Text>
+                                    <Text ellipsis={{ rows: 1, expandable: false, symbol: '...' }} style={{ fontSize: '1.5em', fontWeight: 'bold', lineHeight: 1, fontFamily: 'Outfit', color: 'deeppink' }}>{item.price.current}</Text>
                                 </Space>
                             </Space>
                             <small style={{ fontFamily: 'Outfit, sans-serif', margin: '1rem 0 0 0' }}><ShopFilled style={{ marginInlineEnd: 8 }} />{item.merchant.seller}</small>

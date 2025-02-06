@@ -1,6 +1,6 @@
 import Container from "./layout/Container";
-import { Button, Col, Divider, Flex, Image, Layout, Row, Space, Typography } from "antd";
-import { FacebookOutlined, InstagramOutlined, TikTokFilled, TwitterOutlined } from "@ant-design/icons";
+import { Avatar, Button, Col, Divider, Flex, Image, Layout, Row, Space, Typography } from "antd";
+import { FacebookOutlined, InstagramOutlined, ShopFilled, TikTokFilled, TwitterOutlined } from "@ant-design/icons";
 
 const { Footer } = Layout
 const { Paragraph, Text, Title, Link } = Typography
@@ -36,8 +36,11 @@ export default function SimpleFooter({ themeMode }) {
 
                     <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 12 }} xl={{ span: 12 }} xxl={{ span: 12 }} >
                         <a href="/">
-                            <Flex style={{ padding: '0 0 32px 0' }}>
-                                {themeMode === 'light' ? <Image width={'8rem'} src='https://logodownload.org/wp-content/uploads/2020/04/google-drive-logo-0-1.png' preview={false} alt='...' /> : <Image width={'8rem'} src='https://logodownload.org/wp-content/uploads/2020/04/google-drive-logo-0-1.png' preview={false} alt='...' />}
+                            <Flex align="center" style={{ padding: '0 0 2rem 0' }} gap={'large'}>
+                                <Avatar shape="square" size={'large'} icon={<ShopFilled />} style={{ backgroundColor: "deeppink" }} />
+                                <Paragraph type="secondary" style={{ margin: 0 }}>{'AchadinhosStore.com'}</Paragraph>
+                                {/* {themeMode === 'light' ?
+                                    <Image width={'8rem'} src='https://logodownload.org/wp-content/uploads/2020/04/google-drive-logo-0-1.png' preview={false} alt='...' /> : <Image width={'8rem'} src='https://logodownload.org/wp-content/uploads/2020/04/google-drive-logo-0-1.png' preview={false} alt='...' />} */}
                             </Flex>
                         </a>
                         <Space direction='vertical'>
