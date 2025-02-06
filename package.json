@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://eduardowgmendes.github.io/achadinhos-store/",
+  "homepage": "https://eduardowgmendes.github.io/achadinhos-store",
   "scripts": {
     "start": "vite",
     "predeploy": "npm run build",
