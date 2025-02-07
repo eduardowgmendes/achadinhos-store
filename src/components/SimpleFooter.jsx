@@ -36,7 +36,7 @@ export default function SimpleFooter({ themeMode }) {
 
                     <Col xs={{ span: 24 }} sm={{ span: 24 }} md={{ span: 24 }} lg={{ span: 12 }} xl={{ span: 12 }} xxl={{ span: 12 }} >
                         <a href="/">
-                            <Flex align="center" style={{ padding: '0 0 2rem 0' }} gap={'large'}>
+                            <Flex align="center" style={{ padding: '0 0 2rem 0' }} gap={'middle'}>
                                 <Avatar shape="square" size={'large'} icon={<ShopFilled />} style={{ backgroundColor: "deeppink" }} />
                                 <Paragraph type="secondary" style={{ margin: 0 }}>{'AchadinhosStore.com'}</Paragraph>
                                 {/* {themeMode === 'light' ?

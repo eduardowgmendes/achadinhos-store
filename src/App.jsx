@@ -4,7 +4,7 @@ import NavHeader from './components/nav/NavHeader'
 import { Content } from 'antd/es/layout/layout'
 import AppRoutes from './AppRoutes'
 import { useEffect, useState } from 'react'
-import { AimOutlined, HomeOutlined, InfoCircleOutlined, MoneyCollectOutlined, MoonFilled, ShopOutlined, SunFilled, TagOutlined } from '@ant-design/icons'
+import { AimOutlined, HomeOutlined, InfoCircleFilled, InfoCircleOutlined, MoneyCollectOutlined, MoonFilled, ShopFilled, ShopOutlined, SkinFilled, SkinOutlined, SunFilled, TagFilled, TagOutlined } from '@ant-design/icons'
 import SimpleFooter from './components/SimpleFooter'
 
 function App() {
@@ -25,16 +25,16 @@ function App() {
   }
 
   const links = [
-    { icon: <ShopOutlined />, value: 'Departamentos', href: '/' },
-    { icon: <TagOutlined />, value: 'Top Ofertas', href: '/' },
-    { icon: <AimOutlined />, value: 'Moda & Beleza', href: '/' },
-    { icon: <InfoCircleOutlined />, value: 'Sobre', href: '/' }]
+    { icon: <ShopFilled style={{ color: 'white' }} />, value: 'Departamentos', href: '/' },
+    { icon: <TagFilled style={{ color: 'white' }} />, value: 'Top Ofertas', href: '/' },
+    { icon: <SkinFilled style={{ color: 'white' }} />, value: 'Moda & Beleza', href: '/' },
+    { icon: <InfoCircleFilled style={{ color: 'white' }} />, value: 'Sobre', href: '/' }]
 
   return (
 
     <ConfigProvider theme={{ algorithm: darkMode ? theme.darkAlgorithm : theme.defaultAlgorithm }}>
 
-      <Segmented vertical style={{ zIndex: 9999, margin: '1rem', position: 'absolute', top: 0, right: 0 }} options={[
+      <Segmented vertical style={{ zIndex: 999999, margin: '1rem', position: 'fixed', top: 256, right: 0 }} options={[
         { icon: <SunFilled />, value: 'light' },
         { icon: <MoonFilled />, value: 'dark' },
       ]} onChange={handleThemeChange} value={darkMode ? 'dark' : 'light'} />
